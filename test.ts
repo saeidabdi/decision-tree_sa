@@ -29,7 +29,11 @@ const data: DataItem[] = [
 const features = ['outlook', 'temp', 'humidity', 'windy'];
 const targetAttribute = 'play';
 
-// const tree = id3(data, features, targetAttribute);
+const treeId3 = id3(data, features, targetAttribute);
 const tree = c45(data, features, targetAttribute);
 
+console.log('id3 =>');
+treeView(treeId3)
+
+console.log('\n\nc4.5 =>');
 treeView(tree)

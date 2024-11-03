@@ -18,7 +18,6 @@ function splitInfo(data: DataItem[], feature: string): number {
 function gainRatio(data: DataItem[], targetAttribute: string, feature: string): number {
     const featureGain = gain(data, targetAttribute, feature);
     const splitInformation = splitInfo(data, feature);
-    console.log(feature , ' => ', splitInformation);
     
     return splitInformation === 0 ? 0 : featureGain / splitInformation;
 }
