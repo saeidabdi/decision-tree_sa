@@ -1,0 +1,23 @@
+{
+  "name": "decision-tree_sa",
+  "version": "1.0.0",
+  "description": "algorithms of decision tree",
+  "main": "index.ts",
+  "scripts": {
+    "start:prod": "node dist/main",
+    "dev": "npx ts-node-dev ./src/index.ts",
+    "test": "npx ts-node-dev ./test.ts"
+  },
+  "keywords": [
+    "decision-tree"
+  ],
+  "author": "saeed abdi",
+  "license": "ISC",
+  "dependencies": {
+    "ololog": "^1.1.175",
+    "treeify": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/treeify": "^1.0.3"
+  }
+}
